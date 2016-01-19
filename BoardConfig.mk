@@ -32,6 +32,12 @@ TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
 # Kernel
 TARGET_KERNEL_CONFIG := titan_defconfig
 
+# Kernel Toolchain
+KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-eabi-5.3/bin
+KERNEL_TOOLCHAIN_PREFIX := arm-eabi-
+# Rom Toolchain
+TARGET_GCC_VERSION_EXP := 5.3
+
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 10444800
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 10526720
